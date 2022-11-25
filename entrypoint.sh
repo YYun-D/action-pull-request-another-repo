@@ -36,6 +36,7 @@ echo "Copying contents to git repo"
 mkdir -p $CLONE_DIR/$INPUT_DESTINATION_FOLDER/
 cp -r $INPUT_SOURCE_FOLDER "$CLONE_DIR/$INPUT_DESTINATION_FOLDER/"
 cd "$CLONE_DIR"
+ls
 git checkout -b "$INPUT_DESTINATION_HEAD_BRANCH"
 
 echo "Adding git commit"
